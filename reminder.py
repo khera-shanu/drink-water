@@ -8,7 +8,7 @@ from playsound import playsound
 
 text, lang = "Drink some water!", "en"
 audio_file = "audio.mp3"
-minutes_60 = 60 * 30
+minutes_60 = 60 * 60
 
 if not os.path.exists(os.path.join(os.path.dirname(__file__), audio_file)):
     tts_obj = gTTS(text=text, lang=lang, slow=False)
